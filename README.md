@@ -8,6 +8,7 @@
 * main content: 
   * rotate、 translation、 scala、 spice
   * model、 view、 projection transform
+  * fov should be half
 
 ## pa2
 * unfinished
