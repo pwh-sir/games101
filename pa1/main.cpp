@@ -54,7 +54,7 @@ Eigen::Matrix4f get_projection_matrix(float eye_fov, float aspect_ratio,
                  0, 1, 0, 0,
                  0, 0, 1, (0.5*zNear + 0.5*zFar),
                  0, 0, 0, 1;
-    float height = 2*tan(MY_PI*eye_fov/180);
+    float height = 2*tan(MY_PI*eye_fov/180/2);
     float weight = height*aspect_ratio;
     scale << 2.0/weight, 0, 0, 0,
              0, 2.0/height, 0, 0,
